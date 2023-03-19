@@ -66,4 +66,13 @@ public class User {
         return true;
     }
 
+    public boolean isSameUser(User user) {
+        return userId.equals(user.userId);
+    }
+
+    public void update(User updateUser) {
+        this.password = updateUser.password;
+        this.name = updateUser.name;
+        this.email = updateUser.email;
+    }
 }
